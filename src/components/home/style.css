@@ -400,11 +400,6 @@
   margin: 0 auto;
 }
 /* ------------------------------------------------------------- */
-div {
-}
-
-div {
-}
 
 .faq-box-wrapper {
   max-width: 650px;
@@ -424,4 +419,199 @@ div {
 
 .faq-content {
   padding: 80px 0;
+}
+/* -------------------------------------------------------------- */
+.reviews-slider {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.review-slide {
+  text-align: center;
+  background: #f1f2fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-picture img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #000949;
+}
+
+.name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.designation {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.review-text p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000949;
+  font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000949;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000949 !important;
+}
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #000949;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #000949;
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+.reviews-slider-wrapper {
+  padding: 80px 0;
+}
+
+.reviews-slider-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reviews-slider-content h1 {
+  text-align: center;
+}
+/* Custom Swiper navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: #000949; /* Set background color to #000949 */
+  color: white !important; /* Set arrow color to white */
+  border-radius: 50%; /* Make the arrows round */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  left: 10px !important; /* Adjust position to bottom left */
+  bottom: 10px !important; /* Align to bottom */
+}
+
+.swiper-button-next {
+  right: 10px !important; /* Adjust position to bottom right */
+  bottom: 10px !important; /* Align to bottom */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px !important; /* Adjust arrow icon size */
+  font-weight: bold;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #000949; /* Slightly lighter shade on hover */
+}
+/* ------------------------------------------------------------------ */
+
+.linguistics-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background: #f1f2fa;
+  padding: 80px 0 40px 0;
+}
+
+.linguistics-box-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.linguistics-box-wrapper .swiper {
+  padding-bottom: 100px;
+}
+/* Styling the wave-carousel with scaling and positions */
+.wave-carousel .swiper-container {
+  padding-bottom: 100px;
+}
+
+.wave-carousel .swiper-slide {
+  transform: scale(0.9);
+  position: relative;
+  transition: all 0.4s ease;
+  top: 0;
+}
+
+/* Custom styles for different slide positions */
+.wave-carousel .swiper-slide-active {
+  transform: scale(1.1);
+  padding: 0 20px;
+  filter: drop-shadow(5px 50px 30px #07397211);
+}
+
+.wave-carousel .swiper-slide-next {
+  transform: scale(1);
+  top: 50px;
+  padding: 0 12px;
+}
+
+.wave-carousel .swiper-slide-prev {
+  transform: scale(1);
+  top: 50px;
+  padding: 0 12px;
+}
+
+.wave-carousel .swiper-slide-nth-next-2 {
+  transform: scale(1);
+  top: 100px;
+  padding: 0 9px;
+}
+
+.wave-carousel .swiper-slide-nth-prev-2 {
+  transform: scale(1);
+  top: 100px;
+  padding: 0 9px;
 }

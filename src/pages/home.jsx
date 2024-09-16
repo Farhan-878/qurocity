@@ -10,6 +10,8 @@ import StandOut from "../components/home/standOut";
 import ForeignLang from "../components/home/foreignLang";
 import GlobalDream from "../components/home/globalDream";
 import Faq from "../components/home/faq";
+import ReviewsSlider from "../components/home/reviewSlider";
+import Linguistics from "../components/home/linguistics";
 
 const Home = () => {
   return (
@@ -18,12 +20,14 @@ const Home = () => {
       <Course />
       <FeatureSection />
       <Keybenefit />
+      <Linguistics />
       <WonderingSection />
       <LanguageSection />
       <StandOut />
       <ForeignLang />
       <GlobalDream />
       <Faq />
+      <ReviewsSlider />
     </Layout>
   );
 };
