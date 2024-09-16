@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +8,29 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
-  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  font-family: "Overpass", sans-serif;
   font-size: 16px;
-  color: #000;
 }
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #ff4141;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: #000949;
+}
+p {
+  color: #6d7287;
+  margin: 0;
+  padding: 0;
 }
