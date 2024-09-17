@@ -8,10 +8,21 @@
 .banner-content {
   padding: 80px 0;
 }
+.arrow-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+}
 
 .banner-right img {
   width: 450px;
   height: 100%;
+}
+.banner-left {
+  max-width: 550px;
+  width: 100%;
 }
 
 .custom-dark-btn {
@@ -47,6 +58,16 @@
 .banner-box button {
   width: fit-content;
 }
+.banner-box-list {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #f1f2fa;
+}
+/* ------------------------------------------------------------ */
+
 /* ------------------------ course style ----------------------- */
 
 .course-content {
@@ -285,7 +306,7 @@
 
 .standout-box-right {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 40px;
 }
 
@@ -629,4 +650,66 @@
   transform: scale(1);
   top: 100px;
   padding: 0 9px;
+}
+/* ------------------------------------------------------- */
+
+.language-box-wrapper {
+  flex-wrap: wrap;
+}
+
+.foreignLang-box-content {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.global-dream-box {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-content {
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.footer-right {
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+.banner-content-wrapper {
+  flex-wrap: wrap;
+}
+.feature-box {
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .reviews-slider {
+    max-width: 300px;
+  }
+
+  .banner-right img {
+    max-width: 300px;
+  }
+
+  .feature-box-img img {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .language-box-right img {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .linguistics-content {
+    overflow: hidden;
+  }
+  .wonder-box-content {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .standout-box-right {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
