@@ -42,6 +42,20 @@ const Linguistics = () => {
           }}
           speed={3000}
           modules={[Autoplay]}
+          breakpoints={{
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 3,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 7,
+            },
+          }}
         >
           {services.map((service, index) => (
             <SwiperSlide key={index}>

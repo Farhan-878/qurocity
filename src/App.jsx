@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 767);
+      setIsSmallScreen(window.innerWidth <= 0);
     };
 
     window.addEventListener("resize", handleResize);
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      {isSmallScreen ? (
+      {/* {isSmallScreen ? (
         <div className="coming-soon">
           <div className="container">
             <h1>
@@ -26,9 +26,9 @@ function App() {
             </h1>
           </div>
         </div>
-      ) : (
-        <Home />
-      )}
+      ) : ( */}
+      <Home />
+      {/* )} */}
     </div>
   );
 }

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import { FcReading } from "react-icons/fc";
+import { GoQuote } from "react-icons/go";
+import { IoMdClose } from "react-icons/io"; // Close icon
 import "./style.css";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle the sidenav
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="header-content">
       <div className="container">
@@ -17,8 +26,19 @@ const Header = () => {
               <img src={logo} alt="logo" />
             </a>
           </div>
-          <div className="header-menu">
-            <ul data-aos="fade-down" data-aos-duration="2000">
+
+          {/* Hamburger or close button */}
+          <div className="hamburger-menu" onClick={toggleMenu}>
+            {isOpen ? (
+              <IoMdClose size={30} /> // Close icon
+            ) : (
+              <GoQuote size={30} /> // Hamburger icon
+            )}
+          </div>
+
+          {/* Sidenav */}
+          <div className={`sidenav ${isOpen ? "open" : ""}`}>
+            <ul>
               <li>
                 <a href="#">Languages</a>
               </li>
@@ -35,11 +55,7 @@ const Header = () => {
                 <a href="#">Contact us</a>
               </li>
             </ul>
-            <div
-              className="header-portal custom-btn"
-              data-aos="fade-down"
-              data-aos-duration="2000"
-            >
+            <div className="header-portal custom-btn">
               <FcReading />
               <span>Student Portal</span>
             </div>

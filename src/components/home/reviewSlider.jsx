@@ -8,6 +8,7 @@ import {
   Pagination,
   Navigation,
   EffectCoverflow,
+  Mousewheel,
 } from "swiper/modules";
 import img1 from "../../assets/images/review-swapna.png";
 import img2 from "../../assets/images/review-reeva.png";
@@ -57,12 +58,12 @@ const ReviewsSlider = () => {
               spaceBetween={30}
               centeredSlides={true}
               autoplay={{
-                delay: 3000,
+                delay: 5000,
                 disableOnInteraction: false,
               }}
-              //   pagination={{
-              //     clickable: true,
-              //   }}
+              pagination={{
+                clickable: true,
+              }}
               effect={"coverflow"}
               grabCursor={true}
               slidesPerView={"auto"}
@@ -74,7 +75,13 @@ const ReviewsSlider = () => {
                 slideShadows: true,
               }}
               navigation={false}
-              modules={[Autoplay, Pagination, Navigation, EffectCoverflow]}
+              modules={[
+                Autoplay,
+                Pagination,
+                Navigation,
+                Mousewheel,
+                EffectCoverflow,
+              ]}
               onAutoplayTimeLeft={onAutoplayTimeLeft}
               loop={true}
             >

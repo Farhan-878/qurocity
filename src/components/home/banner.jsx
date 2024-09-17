@@ -61,7 +61,7 @@ const BannerSection = () => {
     <div className="banner-content">
       <div className="container">
         <div className="banner-content-wrapper">
-          <div className="banner-left">
+          <div className="banner-left" data-aos="fade-right">
             <div
               className="banner-box"
               style={{ display: currentIndex === 0 ? "flex" : "none" }}
