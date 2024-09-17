@@ -8,9 +8,11 @@ const Keybenefit = () => {
     <div className="keybenefit-content">
       <div className="container">
         <div className="keybenefit-content-wrapper">
-          <h1>Key benefits of learning a new language with Qurocity</h1>
+          <h1 data-aos="fade-down">
+            Key benefits of learning a new language with Qurocity
+          </h1>
           <div className="keybenefit-box-wrapper">
-            <div className="keybenefit-box">
+            <div className="keybenefit-box" data-aos="zoom-in">
               <img src={key1} alt="key" />
               <p>
                 There are no age restrictions or skill gaps to learning new
@@ -18,7 +20,7 @@ const Keybenefit = () => {
                 growth potential.
               </p>
             </div>
-            <div className="keybenefit-box">
+            <div className="keybenefit-box" data-aos="zoom-in">
               <img src={key2} alt="key" />
               <p>
                 Multilingual students are better equipped to ace academics and
@@ -26,7 +28,7 @@ const Keybenefit = () => {
                 into life-changing realities.
               </p>
             </div>
-            <div className="keybenefit-box">
+            <div className="keybenefit-box" data-aos="zoom-in">
               <img src={key3} alt="key" />
               <p>
                 There are no age restrictions or skill gaps to learning new

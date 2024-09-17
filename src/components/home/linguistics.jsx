@@ -27,7 +27,9 @@ const services = [
 const Linguistics = () => {
   return (
     <div className="linguistics-content wave-carousel">
-      <h1>Languages you can learn to channelize your linguistics career</h1>
+      <h1 data-aos="fade-down">
+        Languages you can learn to channelize your linguistics career
+      </h1>
       <div className="linguistics-box-wrapper">
         <Swiper
           spaceBetween={30}

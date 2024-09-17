@@ -20,12 +20,12 @@ const Course = () => {
     <div className="course-content">
       <div className="container">
         <div className="course-content-wrapper">
-          <h1>
+          <h1 data-aos="fade-down">
             Master a new language for just <span>₹ 1499!</span>
           </h1>
           <div className="course-box">
             {languages.map((language, index) => (
-              <div className="course-box-img" key={index}>
+              <div className="course-box-img" key={index} data-aos="zoom-in">
                 <img
                   src={language.src}
                   alt={language.alt}

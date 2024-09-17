@@ -6,8 +6,8 @@ const Faq = () => {
     <div className="faq-content">
       <div className="container">
         <div className="faq-content-wrapper">
-          <h1>Frequently Asked Questions</h1>
-          <div className="faq-box-wrapper">
+          <h1 data-aos="fade-down">Frequently Asked Questions</h1>
+          <div className="faq-box-wrapper" data-aos="fade-up">
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>

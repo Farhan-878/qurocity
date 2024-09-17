@@ -11,11 +11,11 @@ const WonderingSection = () => {
     <div className="wonder-content">
       <div className="container">
         <div className="wonder-content-wrapper">
-          <h1>
+          <h1 data-aos="fade-down">
             Wondering how learning a foreign language is going to benefit you ?
           </h1>
           <div className="wonder-box-content">
-            <div className="wonder-box">
+            <div className="wonder-box" data-aos="zoom-in">
               <FcGraduationCap fill="#fff" size={60} />
               <h4>Academic Excellence</h4>
               <p>
@@ -23,7 +23,7 @@ const WonderingSection = () => {
                 school/college interviews.
               </p>
             </div>
-            <div className="wonder-box">
+            <div className="wonder-box" data-aos="zoom-in">
               <FcBarChart fill="#fff" size={60} />
               <h4>Dream Careers</h4>
               <p>
@@ -31,7 +31,7 @@ const WonderingSection = () => {
                 international job positions.
               </p>
             </div>
-            <div className="wonder-box">
+            <div className="wonder-box" data-aos="zoom-in">
               <FcPortraitMode stroke="#fff" size={60} />
               <h4>Real-Life Skills</h4>
               <p>
@@ -39,7 +39,7 @@ const WonderingSection = () => {
                 conflict management, etc.
               </p>
             </div>
-            <div className="wonder-box">
+            <div className="wonder-box" data-aos="zoom-in">
               <FcIdea fill="#fff" size={60} />
               <h4>Cognitive Focus</h4>
               <p>
@@ -47,7 +47,7 @@ const WonderingSection = () => {
                 overall thinking process.
               </p>
             </div>
-            <div className="wonder-box">
+            <div className="wonder-box" data-aos="zoom-in">
               <FcSportsMode fill="#fff" size={60} />
               <h4>Self-Confidence Boost</h4>
               <p>
@@ -55,7 +55,7 @@ const WonderingSection = () => {
                 manage weaknesses.
               </p>
             </div>
-            <div className="wonder-box">
+            <div className="wonder-box" data-aos="zoom-in">
               <FcGlobe fill="#fff" size={60} />
               <h4>Cultural Empathy</h4>
               <p>

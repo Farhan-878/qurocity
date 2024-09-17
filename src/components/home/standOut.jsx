@@ -6,27 +6,27 @@ const StandOut = () => {
     <div className="standout-content">
       <div className="container">
         <div className="standout-content-wrapper">
-          <h1>Why we stand out</h1>
+          <h1 data-aos="fade-down">Why we stand out</h1>
           <div className="standout-box-wrapper">
-            <div className="standout-box-left">
+            <div className="standout-box-left" data-aos="zoom-in">
               <img src={stand} alt="stand" />
             </div>
             <div className="standout-box-right">
-              <div className="standout-box">
+              <div className="standout-box" data-aos="zoom-in">
                 <h4>Learning from the best</h4>
                 <p>
                   Learn from native language & Indian teachers passionate about
                   empowering youngsters to break global barriers.
                 </p>
               </div>
-              <div className="standout-box">
+              <div className="standout-box" data-aos="zoom-in">
                 <h4>Customize as per your goals</h4>
                 <p>
                   Customize the course based on your personal and professional
                   goals to make the learning journey more focused.
                 </p>
               </div>
-              <div className="standout-box">
+              <div className="standout-box" data-aos="zoom-in">
                 <h4>Continuous improvement</h4>
                 <p>
                   Take formative periodic tests & quizzes to continuously
@@ -34,7 +34,7 @@ const StandOut = () => {
                   your learning.
                 </p>
               </div>
-              <div className="standout-box">
+              <div className="standout-box" data-aos="zoom-in">
                 <h4>Everything’s user-friendly</h4>
                 <p>
                   Attend live, interactive, and dynamic lectures with
@@ -42,14 +42,14 @@ const StandOut = () => {
                   learning.
                 </p>
               </div>
-              <div className="standout-box">
+              <div className="standout-box" data-aos="zoom-in">
                 <h4>Been there, done that</h4>
                 <p>
                   Be a part of a learning ecosystem that is backed by two
                   decades of niche experience in the online education space.
                 </p>
               </div>
-              <div className="standout-box">
+              <div className="standout-box" data-aos="zoom-in">
                 <h4>Meaningful preparation</h4>
                 <p>
                   Prepare for all globally-recognized language certifications –

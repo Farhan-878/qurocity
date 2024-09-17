@@ -6,9 +6,11 @@ const LanguageSection = () => {
     <div className="language-content">
       <div className="container">
         <div className="language-content-wrapper">
-          <h1>Why Our Online Language Learning Triumphs</h1>
+          <h1 data-aos="fade-down">
+            Why Our Online Language Learning Triumphs
+          </h1>
           <div className="language-box-wrapper">
-            <div className="language-box-left">
+            <div className="language-box-left" data-aos="fade-right">
               <ul>
                 <li>
                   Personalized curriculums for that focused or targeted learning
@@ -24,7 +26,7 @@ const LanguageSection = () => {
                 </li>
               </ul>
             </div>
-            <div className="language-box-right">
+            <div className="language-box-right" data-aos="fade-left">
               <img src={online} alt="online" />
             </div>
           </div>

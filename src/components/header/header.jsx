@@ -8,11 +8,17 @@ const Header = () => {
     <div className="header-content">
       <div className="container">
         <div className="header-content-wrapper">
-          <div className="header-logo">
-            <img src={logo} alt="logo" />
+          <div
+            className="header-logo"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
+            <a href="/">
+              <img src={logo} alt="logo" />
+            </a>
           </div>
           <div className="header-menu">
-            <ul>
+            <ul data-aos="fade-down" data-aos-duration="2000">
               <li>
                 <a href="#">Languages</a>
               </li>
@@ -29,7 +35,11 @@ const Header = () => {
                 <a href="#">Contact us</a>
               </li>
             </ul>
-            <div className="header-portal custom-btn">
+            <div
+              className="header-portal custom-btn"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
               <FcReading />
               <span>Student Portal</span>
             </div>

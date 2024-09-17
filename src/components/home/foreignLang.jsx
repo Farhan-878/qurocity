@@ -1,4 +1,6 @@
 import React from "react";
+import rounded from "../../assets/images/circle.png";
+import flag from "../../assets/images/flag.png";
 
 const languages = [
   { name: "French", url: "/french" },
@@ -27,10 +29,12 @@ const ForeignLang = () => {
         <div className="foreignLang-content-wrapper">
           <div className="foreignLang-box-title">
             <div>
-              <h1>11 foreign language</h1>
-              <h1>learning courses for unlocking attractive opportunities.</h1>
+              <h1 data-aos="fade-down">11 foreign language</h1>
+              <h1 data-aos="fade-down">
+                learning courses for unlocking attractive opportunities.
+              </h1>
             </div>
-            <p>
+            <p data-aos="fade-down">
               However, like any life-changing skill, learning new languages is a
               journey that demands proper guidance and expertise. Qurocity can
               provide the ideal platform for learning languages the right way.
@@ -38,7 +42,7 @@ const ForeignLang = () => {
           </div>
           <div className="foreignLang-box-content">
             <div className="foreignLang-box-left">
-              <div className="foreignLang-box">
+              <div className="foreignLang-box" data-aos="fade-right">
                 <h3>European Languages</h3>
                 <div className="language-list">
                   {languages.map((language, index) => (
@@ -48,7 +52,7 @@ const ForeignLang = () => {
                   ))}
                 </div>
               </div>
-              <div className="foreignLang-box">
+              <div className="foreignLang-box" data-aos="fade-right">
                 <h3>Asian Languages</h3>
                 <div className="language-list">
                   {asianLanguages.map((language, index) => (
@@ -59,8 +63,15 @@ const ForeignLang = () => {
                 </div>
               </div>
             </div>
+            <div className="foreignLang-box-right" data-aos="fade-left">
+              <div className="circle">
+                <img src={rounded} alt="circle" />
+                <div className="flag">
+                  <img src={flag} alt="flag" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="foreignLang-box-right"></div>
         </div>
       </div>
     </div>

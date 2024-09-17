@@ -51,8 +51,8 @@ const ReviewsSlider = () => {
     <div className="reviews-slider-wrapper">
       <div className="container">
         <div className="reviews-slider-content">
-          <h1>What our students have to say about us</h1>
-          <div className="reviews-slider">
+          <h1 data-aos="fade-down">What our students have to say about us</h1>
+          <div className="reviews-slider" data-aos="fade-up">
             <Swiper
               spaceBetween={30}
               centeredSlides={true}

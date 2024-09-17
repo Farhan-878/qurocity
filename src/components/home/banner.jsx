@@ -8,7 +8,7 @@ const BannerSection = () => {
       <div className="container">
         <div className="banner-content-wrapper">
           <div className="banner-left">
-            <div className="banner-box">
+            <div className="banner-box" data-aos="fade-right" data-id="1">
               <h1>
                 Expand your world with personalized{" "}
                 <span>language learning</span>
@@ -24,7 +24,7 @@ const BannerSection = () => {
               <button className="custom-dark-btn">Download the App now!</button>
             </div>
           </div>
-          <div className="banner-right">
+          <div className="banner-right" data-aos="fade-left" data-id="2">
             <img src={bannerImg} alt="bannerImg" />
           </div>
         </div>

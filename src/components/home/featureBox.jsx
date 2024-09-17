@@ -96,10 +96,12 @@ const FeatureBox = () => {
             feature.reverse ? "feature-box-reverse" : ""
           }`}
         >
-          <div className="feature-box-img">
+          <div className="feature-box-img" data-aos="fade-right">
             <img src={feature.imgSrc} alt={feature.altText} />
           </div>
-          <div className="feature-box-text">{feature.content}</div>
+          <div className="feature-box-text" data-aos="fade-left">
+            {feature.content}
+          </div>
         </div>
       ))}
     </div>

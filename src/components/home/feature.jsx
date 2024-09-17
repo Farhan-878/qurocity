@@ -7,7 +7,7 @@ const FeatureSection = () => {
     <div className="feature-content">
       <div className="container">
         <div className="feature-content-wrapper">
-          <h1>Featured in Top Columns</h1>
+          <h1 data-aos="fade-down">Featured in Top Columns</h1>
           <FeatureBox />
         </div>
       </div>
