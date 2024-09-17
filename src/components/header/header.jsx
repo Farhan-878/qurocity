@@ -54,23 +54,23 @@ const Header = () => {
           {/* Sidenav */}
           <div className={`sidenav ${isOpen ? "open" : ""}`}>
             <ul>
-              <li>
+              <li data-aos="zoom-in">
                 <a href="#">Languages</a>
               </li>
-              <li>
+              <li data-aos="zoom-in">
                 <a href="#">Blogs</a>
               </li>
-              <li>
+              <li data-aos="zoom-in">
                 <a href="#">Become a Tutor</a>
               </li>
-              <li>
+              <li data-aos="zoom-in">
                 <a href="#">About us</a>
               </li>
-              <li>
+              <li data-aos="zoom-in">
                 <a href="#">Contact us</a>
               </li>
             </ul>
-            <div className="header-portal custom-btn">
+            <div className="header-portal custom-btn" data-aos="zoom-in">
               <FcReading />
               <span>Student Portal</span>
             </div>
