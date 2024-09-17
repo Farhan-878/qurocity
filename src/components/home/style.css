@@ -698,6 +698,9 @@
 .feature-box {
   flex-wrap: wrap;
 }
+.foreignLang-content {
+  overflow: hidden;
+}
 @media screen and (max-width: 991px) {
   .banner-content-wrapper,
   .foreignLang-box-content,
@@ -713,6 +716,9 @@
   .standout-box-right,
   .wonder-box-content {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .layout-wrapper {
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 767px) {

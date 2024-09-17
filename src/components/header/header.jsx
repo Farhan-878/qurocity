@@ -1,19 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/logo.png";
 import { FcReading } from "react-icons/fc";
 import { GoQuote } from "react-icons/go";
 import { IoMdClose } from "react-icons/io"; // Close icon
 import "./style.css";
+import Headroom from "react-headroom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 991);
+
+  // Function to handle window resizing
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 991);
+    };
+
+    // Add resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Toggle the sidenav
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  return (
+  const headerContent = (
     <div className="header-content">
       <div className="container">
         <div className="header-content-wrapper">
@@ -64,6 +79,9 @@ const Header = () => {
       </div>
     </div>
   );
+
+  // Conditionally render Headroom for desktop, normal header for mobile
+  return isDesktop ? <Headroom>{headerContent}</Headroom> : headerContent;
 };
 
 export default Header;
