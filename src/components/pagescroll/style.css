@@ -1,0 +1,42 @@
+/* Basic styles for the progress wrapper */
+.progress-wrap {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+/* Visibility styles */
+.progress-wrap.visible {
+  opacity: 1; /* Show when scrolled */
+}
+
+.progress-wrap.hidden {
+  opacity: 0; /* Hide when at the top */
+}
+
+/* Progress circle styles */
+.progress-circle {
+  stroke: #ff4141; /* Progress color */
+  stroke-width: 4;
+  fill: none;
+}
+
+/* Arrow styles */
+.arrow-wrap {
+  position: absolute;
+  bottom: 9px; /* Position below the circle */
+}
+
+.arrow {
+  color: #ff4141; /* Arrow color */
+  font-size: 30px;
+}

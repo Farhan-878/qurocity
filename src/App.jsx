@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./pages/home";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ScrollProgress from "./components/pagescroll/pagescroll";
 
 function App() {
   // const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 767);
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <Home />
+      <ScrollProgress />
     </div>
   );
 }
