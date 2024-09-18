@@ -112,7 +112,7 @@ footer.footer-content-wrapper {
   max-width: 400px;
   width: 100%;
   height: 100%;
-  animation: round 15s linear infinite;
+  animation: round 200s linear infinite both;
 }
 
 @keyframes round {
