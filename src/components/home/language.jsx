@@ -1,5 +1,5 @@
 import React from "react";
-import online from "../../assets/images/online.png";
+import online from "../../assets/images/online-lang.avif";
 
 const LanguageSection = () => {
   return (

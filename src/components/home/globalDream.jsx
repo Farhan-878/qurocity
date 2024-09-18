@@ -1,5 +1,5 @@
 import React from "react";
-import dream from "../../assets/images/cropped-img.jpeg";
+import dream from "../../assets/images/online-teacher.avif";
 
 const GlobalDream = () => {
   return (

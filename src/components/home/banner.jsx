@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import bannerImg from "../../assets/images/bannerimg.png";
+import bannerImg from "../../assets/images/banner-lang.avif";
 import { FcOvertime } from "react-icons/fc";
 import { FcManager } from "react-icons/fc";
 import { FcReadingEbook } from "react-icons/fc";

@@ -468,6 +468,17 @@
 
 .faq-content {
   padding: 80px 0;
+  position: relative;
+}
+.faq-content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/images/ser_shap.png) no-repeat;
+  z-index: -1;
 }
 /* -------------------------------------------------------------- */
 .reviews-slider {
@@ -561,6 +572,18 @@
 }
 .reviews-slider-wrapper {
   padding: 80px 0;
+  position: relative;
+}
+.reviews-slider-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/images/ser_shap_r.png) no-repeat;
+  z-index: -1;
 }
 
 .reviews-slider-content {
