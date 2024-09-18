@@ -746,7 +746,8 @@
 }
 @media screen and (max-width: 767px) {
   .reviews-slider {
-    max-width: 300px;
+    max-width: 424px;
+    width: 100%;
   }
 
   .banner-right img {
