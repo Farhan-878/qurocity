@@ -12,7 +12,7 @@ const BannerSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const banners = [
     {
-      title: "Expand your world with personalized language learning",
+      title: "Expand your world with personalized",
       subtitle: "Master any language, anytime, anywhere",
       content: `Qurocity, the ultimate language learning app is here at your
         service to kick start your language learning journey with fun
